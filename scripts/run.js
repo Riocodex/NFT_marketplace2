@@ -15,6 +15,8 @@ const main = async () => {
   // Wait for it to be mined.
   await txn.wait()
 
+  let txn2 = await nftContract.getMintedTimes();
+  console.log(txn2);
 
   };
   
